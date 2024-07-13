@@ -5,9 +5,23 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+}
+
+.center {
+    max-width: 780px;
+    margin: 0 auto;
+    position: relative;
 }
 
 a.btn, button {
@@ -75,6 +89,7 @@ section.intro p {
     line-height: 1.3rem;
     margin-top: 20px;
     margin-bottom: 30px;
+    line-height: 1.3rem;
 }
 
 .shadow-text {
@@ -147,19 +162,244 @@ section.about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-right: 20px;
-    margin-top: 80px;
+    margin-top: 120px;
     gap: 50px;
     position: relative;
 }
 
 section.about div.shadow-text {
-    top:0;
-    left: auto;
-    right: 0;
+    top:-50px;
+    left: -50px;
     z-index: 1;
+    white-space: nowrap;
 }
 
 section.about div:not(.shadow-text) {
     position: relative;
     z-index: 3;
+}
+
+section.about p {
+    margin: 20px 0;
+    color: #555;
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+section.services {
+    background-color: #000;
+    color: #fff;
+    margin-top: 50px;
+    padding: 70px 20px 0;
+    position: relative;
+}
+
+
+section.services .shadow-text {
+    color: rgba(255, 255, 255, .1);
+    z-index: 1;
+    left: 0;
+    top: -50px;
+}
+
+section.services div.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.service {
+    margin: 50px 0;
+}
+
+.service .number {
+    font-size: 3rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #fff;
+    color: #000;
+}
+
+.service h3 {
+    margin: 10px 0 10px;
+}
+
+.service p {
+    color: rgba(255, 255, 255, .5);
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+section.classes {
+    position:relative;
+    padding: 50px 20px;
+}
+
+section.classes .shadow-text {
+    top: -50px;
+    font-size: 4rem;
+    left: -20px;
+}
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.classes-grid .class {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    position:relative;
+    color:#000;
+    text-decoration: none;
+}
+
+.classes-grid .class::after {
+    content: ' →';
+    position: absolute;
+    font-size: 1.3rem;
+    right: 10px;
+    top:50%;
+    margin-top: -1rem;
+    color: #45c3c8;
+}
+
+.class h3 {
+    display: block;
+    font-size: .8rem;
+    margin-top: 7px;
+}
+
+.class time{
+    display:block;
+    font-size: .8rem;
+    margin-top: 7px;
+}
+
+section.facilities {
+    background: linear-gradient(90deg, #C2B0E0 60%, #7DD7D8);
+   
+}
+
+section.facilities img {
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+section.facilities div.columns {
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content 1fr;
+}
+
+section.facilities div.content {
+    position: relative;
+    padding: 10px 60px;
+    color: #fff;
+}
+
+
+section.facilities p {
+    margin: 20px 0;
+    font-size: .8rem;
+}
+
+section.facilities div.shadow-text {
+    z-index:1;
+    color: rgba(255, 255, 255, .1);
+    top:-50px;
+    left: 20px;
+}
+
+
+section.team {
+    padding: 80px 0 40px;
+}
+
+section.team .shadow-text {
+    top:-50px;
+    left: -50px;
+}
+
+div.teams-members {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.member {
+    text-align: center;
+}
+ .member p {
+    font-size: .8rem;
+    color: #777;
+ }
+.member img {
+    border-radius: 15px;
+}
+
+.member h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+section.trainer div.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section.traine div.columns > div {
+    /*padding: 50px;*/
+}
+
+section.trainer .square { 
+    position: absolute;
+    z-index: 1;
+    top:-50%;
+    width: 66%;
+    left:-15%;
+    height:250%;
+    transform: rotate(20deg);
+    background:  linear-gradient(270deg, #ABB6E4, #EFB6C5);
+}
+
+
+section.trainer .content {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    left: 0;
+    top:0;
+    bottom:0;
+    z-index: 2;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+
+section.trainer h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+section.trainer p {
+    text-transform: uppercase;
+}
+section.trainer img {
+    display: block;
+}
+
+section.trainer a {
+    color:#fff;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
 }
