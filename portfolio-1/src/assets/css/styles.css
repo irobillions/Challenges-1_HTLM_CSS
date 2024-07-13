@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background-color: #111926;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #223040;
+    padding: 20px 0;
+}
+
+header a {
+ 
+    color: #fff;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+header div.center {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a.nav-link.active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.center {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a.social-links svg {
+    fill: rgba(255, 255, 255, 0.7); /* changer la couleur du svg en blanc */
+    height: 30px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    padding: 0 10px; /* 0 pour top et bottom */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div.intro {
+    background-color: #111926;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+div.intro img {
+     width: 200px;
+     margin-top: 20px;
+}
+
+div.intro p {
+    margin: 0;
+    align-self: center;
+}
+
+div.h1 {
+    background-color: #223040;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 70px;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 1px solid #556;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    align-self: center;
+}
+
+div.contact {
+    text-align: left;
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+div.projects {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+div.project img {
+    max-width: 100%;
+}
+
+div.project h2 {
+    text-align: center;
+}
+
+footer a.social-links {
+    margin-left: 20px;
+}

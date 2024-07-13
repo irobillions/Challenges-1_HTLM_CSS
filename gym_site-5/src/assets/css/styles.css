@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a.btn, button {
+    background-color: #222;
+    color: #fff;
+    padding: 12px 25px;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    position: relative;
+}
+
+header nav a.active:before  {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    border-bottom: 10px solid #46c6cb;
+    z-index:-1;
+}
+
+section.intro {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    padding: 0 20px;
+    position: relative;
+    gap: 50px;
+}
+
+section.intro .content-column {
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+section.intro h1 {
+    color:#d8a9d8;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+section.intro h2 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+section.intro p {
+    color: #666;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.shadow-text {
+    position: absolute;
+    top: 30px;
+    left:-30px;
+    color: rgba(0, 0, 0, .06);
+    font-size: 7rem;
+    line-height: 6rem;
+    z-index: -1;
+    font-weight: bold;
+}
+
+section.intro div.circle {
+    width: 700px;
+    height: 700px;
+    border-radius:  50%;
+    background: linear-gradient(270deg, #abb6e4 200px, #efb6c5);
+    position: absolute;
+    top: -250px;
+    right: -390px;
+    z-index: -1;
+}
+
+.intro-picture img {
+    width:250px;
+    margin-top: 40px;
+}
+
+.dots {
+    background: url('../img/dot.png');
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    height: 180px;
+    right: -100px;
+    top: 60px;
+    opacity: .5;
+}
+
+form.intro-booking {
+    display: grid;
+    position: relative;
+    top: -5px;
+    grid-template-columns: 35px 1fr 35px 1fr 35px 1fr 1fr;
+    background-color: #fff;
+    align-items: center;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
+    margin: 0 ;
+    border-radius: 5px;
+    border: 3px solid #fff;
+}
+
+form.intro-booking div.icon {
+    text-align: center;
+}
+
+form.intro-booking svg {
+    height: 20px;
+}
+
+form.intro-booking  input {
+    display: block;
+    border: 0;
+    padding: 5px 0;
+    border-right: 2px solid #ddd;
+}
+
+section.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 20px;
+    margin-top: 80px;
+    gap: 50px;
+    position: relative;
+}
+
+section.about div.shadow-text {
+    top:0;
+    left: auto;
+    right: 0;
+    z-index: 1;
+}
+
+section.about div:not(.shadow-text) {
+    position: relative;
+    z-index: 3;
+}
