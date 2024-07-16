@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root{
+    --pink: #D80848;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+header nav  {
+    display: inline-flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+header a.logo {
+    font-size:2rem;
+    letter-spacing:-3px;
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a {
+    padding: 3px 5px;
+    margin: 0 10px;
+}
+
+header nav a.active {
+    border-bottom: 2px solid #fff;
+}
+
+header nav a.red {
+    background-color: var(--pink);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+header div.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.columns > div {
+    display: flex;
+}
+
+header svg {
+    height: 14px;
+    fill: #fff;
+}
+
+header div.columns div:nth-child(2) a{
+   padding: 3px 5px;
+}
+
+header div.columns div:nth-child(2) a:last-child {
+    position: relative;
+    top: -3px;
+}
+
+div.intro {
+    padding:280px 50px 50px;
+    background: url('../img/discover.jpg') top center no-repeat;
+    background-size: cover;
+
+}
+
+div.intro nav {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+
+div.intro nav a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+div.intro nav a time {
+    display: inline-block;
+    font-size: .8rem;
+    transition: all 0.3s ease;
+}
+
+div.intro nav a span {
+    font-size: 0;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    text-transform: initial;
+    position: relative;
+    top: -6px;
+}
+
+div.intro nav a:hover, 
+div.intro nav a.active {
+    color: #fff;
+    font-size: 5rem;
+    line-height: 2.3rem;
+}
+
+div.intro nav a:hover time,
+div.intro nav a.active time {
+    font-size: 2rem;
+}
+
+div.intro nav a:hover span,
+div.intro nav a.active span {
+    font-size:  1rem;
+}
+
+div.intro span.line {
+    min-width: 20px;
+    width: 100%;
+    height: 2px;
+    margin: 0 10px 20px;
+    background-color:  rgba(255, 255, 255, 0.3);
+    display: inline-block;
+}
+
+div.social-links {
+    text-align: right;
+    margin-top: 70px;
+ }
+
+ div.social-links svg {
+    height: 23px;
+    display: inline-block;
+    margin: 10px;
+    fill:  rgba(255, 255, 255, .8);
+    
+ }
+ 
+ div.social-links a svg{
+    transition: all 0.3s ease;
+ }
+
+ div.social-links a:hover svg {
+    height: 2rem;
+ }
